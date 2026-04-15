@@ -16,7 +16,7 @@ jobs:
       - name: 'Install GCC'
         run: 'sudo apt-get update && sudo apt-get install -y gcc'
       - name: 'Compile C program'
-        run: "cd ctest\ngcc main.c -o main"
+        run: "gcc main.c -o main"
       - name: 'Run C program'
-        run: "cd ctest\n./main"
+        run: "./main"
         
